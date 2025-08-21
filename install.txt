@@ -1,1 +1,4 @@
 npm install @clerk/nextjs
+
+Typesafe Envs made Simple
+npm i @t3-oss/env-nextjs zod
