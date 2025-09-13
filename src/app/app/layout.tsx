@@ -1,5 +1,6 @@
 import { getCurrentUser } from "@/services/clerk/lib/getCurrentUser";
 import { redirect } from "next/navigation";
+import Navbar from "./_Navbar";
 
 export default async function AppLayout({
   children,
@@ -12,5 +13,10 @@ export default async function AppLayout({
 
   if (user == null) return redirect("/onboarding");
 
-  return <>children</>;
+  return (
+    <>
+      <Navbar user={user} />
+      {children}
+    </>
+  );
 }
