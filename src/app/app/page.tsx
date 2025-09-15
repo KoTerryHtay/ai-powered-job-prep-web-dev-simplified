@@ -58,7 +58,7 @@ async function JobInfos() {
               <div className="flex items-center justify-between h-full">
                 <div className="space-y-4 h-full">
                   <CardHeader>
-                    <CardTitle className="text-lg">{jobInfo.title}</CardTitle>
+                    <CardTitle className="text-lg">{jobInfo.name}</CardTitle>
                   </CardHeader>
                   <CardContent className="text-muted-foreground line-clamp-3">
                     {jobInfo.description}
